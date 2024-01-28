@@ -330,6 +330,7 @@ Expressions in C++ are combinations of operators, constants, variables, and func
 -   Assignment Expressions: `x = 5`, `y += 10`
 -   Function Call Expressions: `func(5, 10)`
 
+
 [ ] Operators in C++:
 
 ### 1. Arithmetic Operators:
@@ -402,6 +403,7 @@ Assignment operators are used to assign a value to a variable.
 11. **Comma Operator** `,`: Lowest precedence, used to separate expressions.
 
 Keep in mind that precedence determines the order in which operators are evaluated within an expression. Parentheses can be used to override the default precedence and explicitly specify the order of evaluation.
+
 
 **[ ] Conditional and Looping Statements**
 
@@ -506,6 +508,7 @@ inline int square(int x) {
 -   C++ provides a built-in math library (`<cmath>`) containing various mathematical functions.
 -   Common functions include `sqrt()`, `pow()`, `sin()`, `cos()`, `tan()`, `log()`, `exp()`, etc.
 -   These functions operate on numeric data types and return the result of the mathematical operation.
+
 
 [ ] Introduction to memory management in C++ :
 
@@ -1404,6 +1407,7 @@ int main() {
 }
 ```
 
+
 **[ ] Interfaces vs Abstract class :**
 
 ### Interfaces:
@@ -1517,6 +1521,7 @@ void foo() throw(std::runtime_error) {
     // Function body
 }
 ```
+
 
 **[ ] Managing Console I/O Operations in C++ :**
 
@@ -1741,6 +1746,8 @@ public:
 ```
 
 Templates provide a way to write reusable code that can work with different data types without sacrificing type safety or performance. They are widely used in modern C++ programming to implement data structures, algorithms, and libraries.
+
+
 
 **[ ] Standard Library and then move on to Run-Time Type Information (RTTI):**
 
