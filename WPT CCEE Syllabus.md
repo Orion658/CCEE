@@ -136,89 +136,6 @@ HTML5's `<audio>` and `<video>` elements allow seamless integration of multimedi
 
 HTML5's Geolocation API (`navigator.geolocation`) allows web applications to access a user's geographic location with the user's permission. This feature enables the development of location-aware applications, such as mapping services, weather apps, and location-based reminders.
 
-**[ ] Destructuring in javasrcipt**
-
-### Destructuring Arrays:
-
-#### 1. Basic Array Destructuring:
-
-```javascript
-const numbers = [1, 2, 3, 4, 5];
-const [a, b, c] = numbers;
-console.log(a); // 1
-console.log(b); // 2
-console.log(c); // 3
-```
-
-#### 2. Skipping Elements:
-
-```javascript
-const [a, , c] = numbers;
-console.log(a); // 1
-console.log(c); // 3
-```
-
-#### 3. Rest Syntax:
-
-```javascript
-const [a, ...rest] = numbers;
-console.log(a); // 1
-console.log(rest); // [2, 3, 4, 5]
-```
-
-### Destructuring Objects:
-
-#### 1. Basic Object Destructuring:
-
-```javascript
-const person = { name: 'John', age: 30 };
-const { name, age } = person;
-console.log(name); // John
-console.log(age); // 30
-```
-
-#### 2. Assigning to Different Variable Names:
-
-```javascript
-const { name: personName, age: personAge } = person;
-console.log(personName); // John
-console.log(personAge); // 30
-```
-
-#### 3. Default Values:
-
-```javascript
-const { name = 'Anonymous', age = 25 } = {};
-console.log(name); // Anonymous
-console.log(age); // 25
-```
-
-#### 4. Nested Object Destructuring:
-
-```javascript
-const user = {
-  name: 'Alice',
-  age: 25,
-  address: {
-    city: 'New York',
-    country: 'USA'
-  }
-};
-const { name, address: { city } } = user;
-console.log(name); // Alice
-console.log(city); // New York
-```
-
-### Destructuring Function Parameters:
-
-```javascript
-function printUser({ name, age }) {
-  console.log(`Name: ${name}, Age: ${age}`);
-}
-const user = { name: 'Bob', age: 35 };
-printUser(user); // Name: Bob, Age: 35
-```
-
 ### HTML Forms & Controls:
 
 1.  **Input:** Used to create various types of form controls, such as text fields, checkboxes, radio buttons, etc.
@@ -466,6 +383,89 @@ Bootstrap offers a wide range of components to build common interface elements:
 -   **Function Parameters:** Parameters are variables listed inside the parentheses of a function definition. They act as placeholders for values that will be passed to the function when it is invoked.
 -   **Function Invocation:** Functions are executed or invoked using their name followed by parentheses containing any arguments that need to be passed to the function.
 -   **Function Closures:** Closures are functions that have access to variables from their containing scope, even after the containing function has returned.
+
+**[ ] Destructuring in javasrcipt**
+
+### Destructuring Arrays:
+
+#### 1. Basic Array Destructuring:
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const [a, b, c] = numbers;
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 3
+```
+
+#### 2. Skipping Elements:
+
+```javascript
+const [a, , c] = numbers;
+console.log(a); // 1
+console.log(c); // 3
+```
+
+#### 3. Rest Syntax:
+
+```javascript
+const [a, ...rest] = numbers;
+console.log(a); // 1
+console.log(rest); // [2, 3, 4, 5]
+```
+
+### Destructuring Objects:
+
+#### 1. Basic Object Destructuring:
+
+```javascript
+const person = { name: 'John', age: 30 };
+const { name, age } = person;
+console.log(name); // John
+console.log(age); // 30
+```
+
+#### 2. Assigning to Different Variable Names:
+
+```javascript
+const { name: personName, age: personAge } = person;
+console.log(personName); // John
+console.log(personAge); // 30
+```
+
+#### 3. Default Values:
+
+```javascript
+const { name = 'Anonymous', age = 25 } = {};
+console.log(name); // Anonymous
+console.log(age); // 25
+```
+
+#### 4. Nested Object Destructuring:
+
+```javascript
+const user = {
+  name: 'Alice',
+  age: 25,
+  address: {
+    city: 'New York',
+    country: 'USA'
+  }
+};
+const { name, address: { city } } = user;
+console.log(name); // Alice
+console.log(city); // New York
+```
+
+### Destructuring Function Parameters:
+
+```javascript
+function printUser({ name, age }) {
+  console.log(`Name: ${name}, Age: ${age}`);
+}
+const user = { name: 'Bob', age: 35 };
+printUser(user); // Name: Bob, Age: 35
+```
 
 ### Introduction to Object-Oriented Programming (OOP) in JavaScript:
 
