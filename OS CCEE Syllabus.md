@@ -1,4 +1,4 @@
-**Introduction to Operating Systems**
+# Introduction to Operating Systems
 
 An operating system (OS) is a system software that acts as an intermediary between the user and the computer hardware. It manages the hardware resources of a computer system and provides a set of services to software applications.
 
@@ -11,7 +11,7 @@ An operating system (OS) is a system software that acts as an intermediary betwe
     2.  Different hardware architectures and interfaces require different OS designs.
     3.  The OS communicates with hardware components such as CPUs, memory, storage devices, and input/output devices to perform functions like data management, memory management, task scheduling, and input/output operations.
 
-**Components of an Operating System:**
+### Components of an Operating System:
 
 1.  **Kernel**: The core component of the operating system that provides essential services, such as memory management, process management, device management, and system call handling. It directly interacts with the hardware and manages system resources.
 2.  **File System**: Manages the organization, storage, and retrieval of data on storage devices such as hard drives, solid-state drives (SSDs), and flash drives. It provides a hierarchical structure for organizing files and directories and ensures data integrity and security.
@@ -21,16 +21,16 @@ An operating system (OS) is a system software that acts as an intermediary betwe
 6.  **Shell**: A command interpreter that allows users to interact with the operating system through command-line interfaces. It interprets user commands and executes them by interacting with the kernel and other system components.
 7.  **Utilities**: Supplementary software tools provided by the operating system to perform specific tasks such as file management, system maintenance, network configuration, and performance monitoring.
 
-**Basic Computer Organization Required for OS:**
+### Basic Computer Organization Required for OS:
 
 1.  **Processor (CPU)**: Executes instructions and performs calculations. The operating system manages CPU resources by scheduling tasks, allocating processor time to running programs, and handling interrupts.
 2.  **Memory (RAM)**: Stores program instructions and data temporarily while the computer is running. The OS manages memory allocation and ensures efficient utilization of available memory resources.
 3.  **Input/Output (I/O) Devices**: Enable communication between the computer and external devices, such as keyboards, mice, displays, printers, and storage devices. The operating system coordinates I/O operations, manages device drivers, and handles data transfer between devices and memory.
 4.  **Storage Devices**: Store data permanently even when the computer is powered off, such as hard drives, SSDs, and optical drives. The OS manages storage devices through the file system, organizing data into files and directories and facilitating read and write operations.
 
-**Comparison of Different Operating System Types and Examples**
+### Comparison of Different Operating System Types and Examples
 
-Certainly! Let's explore examples of well-known operating systems across various categories and discuss their differences:
+Let's explore examples of well-known operating systems across various categories and discuss their differences:
 
 1.  **Desktop Operating Systems**:
     1.  Examples: Microsoft Windows, macOS (formerly OS X), Linux distributions (such as Ubuntu, Fedora, Debian)
@@ -65,7 +65,7 @@ Certainly! Let's explore examples of well-known operating systems across various
 
 Each type of operating system is tailored to meet the specific needs and constraints of its target platform and application domain. Differences in design, functionality, performance characteristics, and supported hardware/software environments reflect the diverse requirements of desktops, servers, mobile devices, embedded systems, and real-time systems.
 
-**Functions of an Operating System:**
+### Functions of an Operating System:
 
 1.  **Process Management**:
     1.  Creation and termination of processes.
@@ -97,7 +97,7 @@ Each type of operating system is tailored to meet the specific needs and constra
     2.  Network configuration and management.
     3.  Network security, including firewalls and encryption.
 
-**User and Kernel Space and Mode; Interrupts and System Calls:**
+### User and Kernel Space and Mode; Interrupts and System Calls:
 
 1.  **User and Kernel Space**:
     1.  Operating systems distinguish between user space and kernel space to ensure system stability and security.
@@ -114,7 +114,7 @@ Each type of operating system is tailored to meet the specific needs and constra
     3.  User processes invoke system calls to perform privileged operations that require access to kernel resources.
     4.  System calls transition the CPU from user mode to kernel mode, enabling the execution of privileged instructions within the kernel.
 
-**Introduction to Linux**
+## Introduction to Linux
 
 Linux is a powerful and versatile operating system renowned for its stability, security, and flexibility. Developed as an open-source project, Linux has evolved into a cornerstone of modern computing, powering everything from personal computers to servers, smartphones, and embedded devices. Here's a brief overview:
 
@@ -232,7 +232,7 @@ Now, the owner (`user`) has execute permission, denoted by `rwx`.
 
 To set system variables permanently, add them to the appropriate shell configuration file (e.g., `.bashrc` for Bash) in your home directory. You can edit this file using a text editor like `nano` or `vi`. After saving the changes, the variables will be set every time you open a new terminal session. Alternatively, you can use the `export` command in the terminal to set them temporarily for the current session.
 
-**Shell Programming**
+## Shell Programming
 
 **1. What is Shell; Different Shells in Linux:**
 
@@ -305,7 +305,7 @@ echo "You are $age years old."
 
 Shell programming offers powerful tools for automating tasks, customizing the shell environment, and interacting with the operating system. Understanding shell concepts and commands is essential for efficient system administration and script development in Linux.
 
-**Shell Programming**
+### Shell Programming adv
 
 **1. Decision Loops:**
 
@@ -444,7 +444,7 @@ esac
 
 Shell programming provides a versatile toolset for automating tasks, controlling program flow, and manipulating data. By mastering decision loops, regular expressions, and arithmetic expressions, you can create powerful and efficient shell scripts to automate various tasks in your Linux environment.
 
-**Processes**
+## Processes
 
 **1. What is a Process:**
 
@@ -465,7 +465,7 @@ Shell programming provides a versatile toolset for automating tasks, controlling
     -   **Blocked**: The process is waiting for an event (e.g., I/O operation, resource availability) to occur before it can proceed.
     -   **Termination**: The process completes its execution and releases any resources it was using. It may exit voluntarily or be terminated by the operating system.
 
-**4. Schedulers:**
+## Schedulers
 
 **Short-term Scheduler (CPU Scheduler):**
 
@@ -517,14 +517,14 @@ Shell programming provides a versatile toolset for automating tasks, controlling
 -   Processes are assigned to a specific queue based on their characteristics (e.g., priority, process type).
 -   Provides a way to handle different types of processes differently, improving overall system performance and responsiveness.
 
-**Belady's Anomaly:**
+### Belady's Anomaly:
 
 -   Belady's Anomaly refers to the phenomenon where increasing the number of frames (or memory blocks) in a page replacement algorithm can lead to more page faults.
 -   This anomaly contradicts the intuition that more available memory should result in fewer page faults.
 -   It occurs in some page replacement algorithms like Optimal (OPT) and First-In-First-Out (FIFO) when increasing the number of frames causes pages that were previously in memory to be replaced, resulting in more frequent page faults.
 -   Belady's Anomaly underscores the importance of choosing page replacement algorithms carefully and highlights the complexities involved in memory management in operating systems.
 
-**Comparison of Scheduling Algorithms based on Turnaround Time**
+### Comparison of Scheduling Algorithms based on Turnaround Time
 
 To compare the performance of different scheduling algorithms based on turnaround time, let's consider a set of processes and simulate their execution using various scheduling algorithms. We'll calculate the turnaround time for each process and analyze the results to determine which scheduler performs better. Here's an example scenario:
 
@@ -584,7 +584,7 @@ Average Turnaround Time = (25 + 11 + 29 + 28 + 19) / 5 = 22.4
 
 Based on the average turnaround time calculated for each scheduling algorithm, we can conclude that FCFS has the lowest average turnaround time (15.8), followed by SJF (18), and RR (22.4). Therefore, in this scenario, FCFS performs better than SJF and RR in terms of turnaround time.
 
-**Process Creation and Management**
+### Process Creation and Management
 
 **1. Process Creation using fork; waitpid and exec System Calls:**
 
@@ -630,7 +630,7 @@ int main() {
 
 Understanding process creation, management, and the relationship between parent and child processes is essential for building robust and efficient multi-process applications in Unix-like operating systems.
 
-**Memory Management**
+## Memory Management
 
 **1. Different Types of Memories:**
 
@@ -669,7 +669,7 @@ Understanding process creation, management, and the relationship between parent 
 -   It involves shifting allocated memory blocks towards one end of the memory space, consolidating fragmented free space into a single large block.
 -   Compaction is commonly used in systems where memory allocation and deallocation occur frequently, such as dynamic memory allocation in programming languages like Java and C++.
 
-**. Internal and External Fragmentation:**
+### Internal and External Fragmentation:
 
 **Internal Fragmentation:**
 
@@ -687,7 +687,7 @@ Understanding process creation, management, and the relationship between parent 
 
 In summary, compaction is a technique used to reduce fragmentation in memory by rearranging allocated memory blocks, while internal fragmentation occurs when allocated memory is larger than needed, and external fragmentation occurs when free memory is fragmented into small, non-contiguous blocks.
 
-**Segmentation**
+## Segmentation
 
 **1. What is Segmentation:**
 
@@ -710,7 +710,7 @@ In summary, compaction is a technique used to reduce fragmentation in memory by 
 -   When a memory access is made, the hardware uses the segment number provided by the program to index into the segmentation table and retrieve the corresponding segment descriptor.
 -   The segment descriptor provides the base address and length of the segment, which are used by the hardware to calculate the physical address for the memory access.
 
-**Paging**
+## Paging
 
 **1. What is Paging:**
 
@@ -734,7 +734,7 @@ In summary, compaction is a technique used to reduce fragmentation in memory by 
 -   **Translation Lookaside Buffer (TLB)**: A cache memory used to store recently accessed page table entries, reducing the latency of memory access.
 -   The TLB caches frequently used page table entries, allowing for faster address translation and improving overall system performance.
 
-**Concept of Dirty Bit**
+### Concept of Dirty Bit
 
 -   The dirty bit, also known as the modified bit or the dirty page bit, is a single bit associated with each page in a virtual memory system.
 -   It indicates whether the contents of a page in memory have been modified since the page was last loaded from or written to the backing store (disk).
@@ -742,7 +742,7 @@ In summary, compaction is a technique used to reduce fragmentation in memory by 
 -   The dirty bit is used by the operating system's memory management system to determine which pages need to be written back to the disk when there is a shortage of physical memory or during page replacement algorithms.
 -   Pages with the dirty bit set must be written back to the disk to ensure data consistency and to prevent data loss in case of system failure.
 
-**Shared Pages and Reentrant Code**
+### Shared Pages and Reentrant Code
 
 -   **Shared Pages**: Shared pages are memory pages that can be accessed by multiple processes concurrently.
     -   Shared memory allows multiple processes to share data without the need for explicit inter-process communication mechanisms.
@@ -753,7 +753,7 @@ In summary, compaction is a technique used to reduce fragmentation in memory by 
     -   It is typically used in multi-threaded or multi-process environments where multiple threads or processes may execute the same code simultaneously.
     -   Reentrant code is thread-safe and does not require synchronization mechanisms such as mutexes or semaphores.
 
-**Throttling**
+### Throttling
 
 -   Throttling is a technique used to limit the rate or frequency of certain operations or actions in a system.
 -   It is commonly used in computer systems, networks, and distributed systems to control resource usage, prevent overload, and ensure fair resource allocation.
@@ -765,7 +765,7 @@ In summary, compaction is a technique used to reduce fragmentation in memory by 
     -   Limiting CPU usage of background processes to avoid impacting the performance of foreground applications.
 -   Throttling strategies are designed based on system requirements, resource availability, and performance objectives, balancing the need to prevent resource exhaustion with the need to maintain system responsiveness and throughput.
 
-**Virtual Memory**
+### Virtual Memory
 
 **1. What is Virtual Memory:**
 
@@ -798,7 +798,7 @@ In summary, compaction is a technique used to reduce fragmentation in memory by 
     -   **Clock (Second-Chance)**: Improves upon FIFO by using a circular list of pages and a "use" bit to track page access. Evicts the first page encountered with the "use" bit unset.
 -   The choice of page replacement algorithm depends on factors such as system workload, memory access patterns, and system performance goals.
 
-**Deadlock**
+### Deadlock
 
 **1. Necessary Conditions of Deadlock:**
 
@@ -845,7 +845,7 @@ In summary, compaction is a technique used to reduce fragmentation in memory by 
 -   Deadlock involves a specific scenario where processes are stuck in a circular wait, while starvation can occur in various situations where a process is unfairly deprived of resources due to scheduling or resource allocation policies.
 -   Deadlock is a more severe issue as it can result in a complete system halt, whereas starvation affects the performance and responsiveness of individual processes.
 
-**Important Names and Dates in Operating Systems**
+## Important Names and Dates in Operating Systems
 
 1.  **Operating System Release Dates**:
 
